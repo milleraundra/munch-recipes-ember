@@ -1,11 +1,6 @@
 <div class="item-tile">
   <img class="img-responsive" src="{{item.image}}" alt="{{item.name}}" />
   <h5>{{item.name}}</h5>
-  <h5>{{item.price}}</h5>
-
-  <!-- {{#each item.ratings as |rating|}}
-    {{log rating.stars}}
-  {{/each}} -->
-
-  <h5>{{star-rating item.ratings}}</h5>
+  <h5>${{item.price}}.00</h5>
+  <h5>Rating: {{star-rating item.ratings}}</h5>
 </div>
