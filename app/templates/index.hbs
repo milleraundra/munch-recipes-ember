@@ -2,7 +2,7 @@
   <h2>Yoga Store</h2>
 </div>
 
-{{#each model as |item|}}
+{{#each model.items as |item|}}
   {{#link-to 'single-item' item.id}}{{item-tile item=item}}{{/link-to}}
 {{/each}}
 
