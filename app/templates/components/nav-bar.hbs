@@ -13,6 +13,11 @@
         <li>{{#link-to 'category' 'equipment'}}Equipment{{/link-to}}</li>
         <li>{{#link-to 'category' 'coupons'}}Coupons{{/link-to}}</li>
       </ul>
+      <div class="navbar-right">
+        <button class="btn btn-checkout btn-default" aria-label="Left Align">{{#link-to 'checkout'}}
+          <span class="glyphicon glyphicon-shopping-cart glyphicon-align-left" aria-hidden="true"></span> Cart {{itemsInCart}}{{/link-to}}
+        </button>
+      </div>
     </div>
   </div>
 </nav>
