@@ -1,1 +1,27 @@
-Hi!
+<h2>Create New Item</h2>
+<div class="">
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      {{input value=name type="text"}}
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      {{#x-select value=category}}
+        {{#x-option value="apparel"}}Apparel{{/x-option}}
+        {{#x-option value="equipment"}}Equipment{{/x-option}}
+        {{#x-option value="coupons"}}Coupons{{/x-option}}
+      {{/x-select}}
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{textarea value=description type="text"}}
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      {{input value=price type="number"}}
+    </div>
+    <button class="btn btn-submit"{{action 'createItem'}}>Submit</button>
+  </form>
+</div>
