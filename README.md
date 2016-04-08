@@ -1,7 +1,11 @@
-# Jsreview4
+# Ember Q&A Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Ember application allows users to view, rank, and purchase Yoga products in a store. 
+
+#### By Aundra Miller
+
+## Description
+This Ember application allows users to view, rank, and purchase fake Yoga products. New products can be added to the selection, viewed individually and ranked by users. Items can be added to a cart and checked out by users.
 
 ## Prerequisites
 
@@ -20,10 +24,21 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
-## Running / Development
+## Remaining Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Update and delete items.
+* Update and delete ratings.
+* Remove items from the cart.
+
+## Support and contact details
+
+If you have any questions, concerns, or suggestions, contact me directly at miller.aundra@gmail.com. Pull requests can be submitted directly to milleraundra on Github.
+
+## Technologies Used
+
+* Ember
+* JavaScript
+* Node / NPM
 
 ### Code Generators
 
@@ -40,14 +55,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build --environment production` (production)
 
 ### Deploying
+N/A
 
-Specify what it takes to deploy your app.
+### Running / Development
 
-## Further Reading / Useful Links
+* `ember server`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+### License
 
+The MIT License (MIT)
+
+Copyright (c) 2016 Aundra Miller
