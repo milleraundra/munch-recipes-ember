@@ -1,7 +1,9 @@
 <img src="{{model.image}}" alt="" />
-<h4>{{model.name}}</h4>
+<h2>{{model.name}}</h2>
+<h3>About:</h3>
 <h5>{{model.description}}</h5>
-<h4>{{model.price}}</h4>
+<h4>Rating: {{star-rating model.ratings}}</h4>
+<h4>${{model.price}}.00</h4>
 
 {{add-rating item=model addRating="addRating"}}
 
