@@ -1,3 +1,3 @@
 {{#each model as |item|}}
-  {{item-tile item=item}}
+  {{#link-to 'single-item' item.id}}{{item-tile item=item}}{{/link-to}}
 {{/each}}
