@@ -7,7 +7,11 @@ export default Ember.Route.extend({
   actions: {
     addRating(params) {
       var newRating = this.store.createRecord('rating', params);
-      newRating.save();
+      var item = params.item;
+      item.get('ratings').addObject(newRating);
+      newRating.save().then(function() {
+        item.save();
+      });
       this.transitionTo('single-item');
     }
   }
