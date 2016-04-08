@@ -5,6 +5,8 @@
 <h4>Rating: {{star-rating model.item.ratings}}</h4>
 <h4>${{model.item.price}}.00</h4>
 
+<button class="btn btn-danger" {{action 'addToCart' model.item}}>Add To Cart</button>
+
 {{add-rating item=model.item addRating="addRating"}}
 <h3>Customer Reviews:</h3>
 {{ratings-display ratings=model.item.ratings}}

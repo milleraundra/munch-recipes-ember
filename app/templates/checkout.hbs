@@ -1,1 +1,14 @@
-{{outlet}}
+<div class="checkout">
+  <h1 class="page-header">Checkout</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Items In Cart:</h2>
+      {{#each model as |item|}}
+      {{item-tile item=item}}
+      {{/each}}
+    </div>
+    <div class="col-sm-6">
+      <button class="btn btn-lg btn-submit" {{action 'checkout'}}>Checkout</button>
+    </div>
+  </div>
+</div>

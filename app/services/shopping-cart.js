@@ -8,5 +8,9 @@ export default Ember.Service.extend({
   },
   remove(item) {
     this.get('items').removeObject(item);
+  },
+  checkout(item) {
+    console.log('fired');
+    this.set('items', []);
   }
 });
