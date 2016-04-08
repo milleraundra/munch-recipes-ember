@@ -7,6 +7,7 @@ export function starRating(params) {
     count += rating.get('stars');
   });
   var average = count / length;
+  average = average.toFixed(1);
   return average;
 }
 

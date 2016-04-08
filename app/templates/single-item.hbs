@@ -1,10 +1,10 @@
-<img src="{{model.image}}" alt="" />
-<h2>{{model.name}}</h2>
+<img src="{{model.item.image}}" alt="" />
+<h2>{{model.item.name}}</h2>
 <h3>About:</h3>
-<h5>{{model.description}}</h5>
-<h4>Rating: {{star-rating model.ratings}}</h4>
-<h4>${{model.price}}.00</h4>
+<h5>{{model.item.description}}</h5>
+<h4>Rating: {{star-rating model.item.ratings}}</h4>
+<h4>${{model.item.price}}.00</h4>
 
-{{add-rating item=model addRating="addRating"}}
-
-{{ratings-display ratings=model.ratings}}
+{{add-rating item=model.item addRating="addRating"}}
+<h3>Customer Reviews:</h3>
+{{ratings-display ratings=model.item.ratings}}

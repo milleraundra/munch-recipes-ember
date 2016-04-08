@@ -2,7 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(param) {
-    return this.store.findRecord('item', param.item_id);
+    return Ember.RSVP.hash({
+      item: this.store.findRecord('item', param.item_id),
+      ratings: this.store.findAll('rating')
+    })
+    return
   },
   actions: {
     addRating(params) {
