@@ -5,7 +5,14 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
       </button>
-      <a id="brand-logo" class="navbar-brand" href="#">Exhale</a>
+      <a id="brand-logo" class="navbar-brand">{{#link-to 'index'}}Exhale{{/link-to}}</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'category' 'apparel'}}Apparel{{/link-to}}</li>
+        <li>{{#link-to 'category' 'equipment'}}Equipment{{/link-to}}</li>
+        <li>{{#link-to 'category' 'coupons'}}Coupons{{/link-to}}</li>
+      </ul>
     </div>
   </div>
 </nav>

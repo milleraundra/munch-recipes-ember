@@ -5,9 +5,17 @@
     padding-left: 10px;
     font-size: 2em;
   }
-
 }
 
 .btn-submit {
   background-color: #ffcc80;
+}
+
+.item-tile {
+  img {
+    max-width: 30%;
+  }
+  h5 {
+    padding-left: 30px;
+  }
 }

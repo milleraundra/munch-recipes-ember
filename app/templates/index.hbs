@@ -1,1 +1,11 @@
-{{create-item createItem="createItem"}}
+<div class="page-header">
+  <h2>Yoga Store</h2>
+</div>
+
+{{#each model as |item|}}
+  {{#link-to 'single-item' item.id}}{{item-tile item=item}}{{/link-to}}
+{{/each}}
+
+
+
+<!-- {{create-item createItem="createItem"}} -->
