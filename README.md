@@ -1,4 +1,4 @@
-# Ember Q&A Board
+# Yoga Store Ember App
 
 This Ember application allows users to view, rank, and purchase Yoga products in a store. 
 
